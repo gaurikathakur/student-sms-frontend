@@ -1,4 +1,4 @@
-const API_BASE = "https://student-sms-backend-3.onrender.com";
+const API_BASE = "https://student-sms-backend-6.onrender.com/api";
 
 
 export async function getJSON(path) {
