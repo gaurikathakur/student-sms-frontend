@@ -1,0 +1,110 @@
+/* src/styles/Auth.css */
+
+* { box-sizing: border-box; }
+
+.auth-viewport {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(120deg, rgba(91, 33, 182, 0.8), rgba(124, 58, 237, 0.85)),
+    url("https://images.unsplash.com/photo-1606761568499-6b18d2d2d3d3?auto=format&fit=crop&w=1470&q=80")
+      center/cover no-repeat;
+  font-family: "Inter", system-ui, sans-serif;
+  padding: 3rem;
+  color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.auth-left,
+.auth-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.auth-left p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+}
+
+.auth-right label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.auth-right input,
+.auth-right select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  outline: none;
+  color: #111;
+}
+
+.auth-right input:focus {
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.6);
+}
+
+.primary-btn {
+  background: white;
+  color: #5b21b6;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 1.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #ede9fe;
+  transform: translateY(-2px);
+}
+
+.error {
+  color: #fee2e2;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.rules {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .auth-form {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}

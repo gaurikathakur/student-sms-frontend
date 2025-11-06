@@ -1,0 +1,38 @@
+/* src/styles/Dashboard.css */
+
+.portal {
+  display:flex;
+  min-height:100vh;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto;
+}
+.sidebar {
+  width: 220px;
+  background: #0f172a;
+  color: #fff;
+  padding: 24px;
+  display:flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.sidebar .brand { font-size:18px; font-weight:700; margin-bottom:6px; }
+.sidebar nav { display:flex; flex-direction:column; gap:8px; }
+.sidebar a { color: #cbd5e1; text-decoration:none; padding:8px 10px; border-radius:8px; }
+.sidebar a:hover { background: rgba(255,255,255,0.04); color: #fff; }
+
+.portal-main { flex:1; background: #f8fafc; padding: 24px; }
+.portal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+.portal-header .secondary { background:transparent; border:1px solid #64748b; padding:8px 12px; border-radius:8px; cursor:pointer; }
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:18px;
+}
+.card {
+  background:white;
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+  padding:18px;
+}
+.card h3 { margin-top:0; }
+.admin-card { border-left: 6px solid #7c3aed; }

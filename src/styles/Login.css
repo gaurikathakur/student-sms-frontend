@@ -1,0 +1,43 @@
+/* frontend/src/styles/login.css */
+:root{
+  --accent:#5846f2;
+  --bg1: linear-gradient(90deg,#4b39f5,#c64bd4);
+}
+*{box-sizing:border-box}
+body,html,#root{height:100%}
+.auth-bg{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg1);
+  padding:40px;
+}
+.auth-card{
+  width:720px;
+  max-width:95%;
+  background:#fff;
+  padding:36px;
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.12);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.auth-card h1{color:var(--accent); margin:0 0 8px 0}
+.auth-card p{margin:0;color:#666}
+.auth-card input, .auth-card select{
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #e6e6e6;
+  outline:none;
+  font-size:16px;
+}
+.primary{
+  margin-top:10px;
+  padding:12px 18px;
+  background:var(--accent);
+  color:#fff;border:none;border-radius:12px;font-weight:700;
+}
+.auth-actions{display:flex; align-items:center; justify-content:space-between; font-size:14px}
+.card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}

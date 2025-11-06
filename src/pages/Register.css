@@ -1,0 +1,40 @@
+.register-page {
+  background: linear-gradient(135deg, #7f5af0, #6246ea);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 10px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.register-form input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #6246ea;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #7f5af0;
+}
